@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #021526;
+}
+
+.k-header{
+    width: 100%;
+    padding: 25px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #021526;
+}
+
+.k-header h2,
+.k-footer h2{
+    color: #F5EFE4;
+    font-family: top2;
+    font-size: 27px;
+}
+
+.k-header h2 span,
+.k-footer h2 span{
+    color: #F5B31B;
+}
+
+.k-header nav{
+    display: flex;
+    gap: 35px;
+}
+
+.k-header nav a{
+    color: #F5EFE4;
+    text-decoration: none;
+    font-family: para2;
+    transition: 0.3s;
+}
+
+.k-header nav a:hover{
+    color: #F5B31B;
+}
+
+.k-hero{
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 80px 9%;
+    background:
+    linear-gradient(90deg,#021526 5%,#021526CC 45%,transparent),
+    url("image/karaikal-hero.jpg") center/cover no-repeat;
+}
+
+.k-hero-content span,
+.k-about span,
+.k-title span,
+.k-food span,
+.k-culture span{
+    color: #F5B31B;
+    font-family: para2;
+    letter-spacing: 4px;
+}
+
+.k-hero-content h1{
+    color: #F5EFE4;
+    font-family: top2;
+    font-size: 65px;
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+.k-hero-content h1 b{
+    color: #F5B31B;
+}
+
+.k-hero-content p{
+    color: #D5DCE3;
+    font-family: para2;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 480px;
+    margin-bottom: 35px;
+}
+
+.k-hero-content a{
+    display: inline-block;
+    text-decoration: none;
+    color: #021526;
+    background: #F5B31B;
+    padding: 15px 25px;
+    font-family: para2;
+    border-radius: 4px;
+}
+
+.k-about{
+    padding: 100px 9%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.k-about h2,
+.k-title h2,
+.k-food h2,
+.k-culture h2{
+    color: #F5EFE4;
+    font-family: top2;
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.k-about p,
+.k-food p,
+.k-culture p{
+    color: #B9C4D0;
+    font-family: para2;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.k-about img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.k-places{
+    padding: 80px 7%;
+}
+
+.k-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.k-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.k-card{
+    background: #0C2B43;
+    border: 1px solid #36536A;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.k-card:hover{
+    transform: translateY(-8px);
+    border-color: #F5B31B;
+}
+
+.k-card img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.k-card h3{
+    color: #F5B31B;
+    font-family: top2;
+    padding: 20px 18px 10px;
+}
+
+.k-card p{
+    color: #B9C4D0;
+    font-family: para2;
+    padding: 0 18px 25px;
+    line-height: 25px;
+}
+
+.k-food,
+.k-culture{
+    text-align: center;
+    padding: 100px 20px;
+    background: #0C2B43;
+    margin-top: 40px;
+}
+
+.k-culture{
+    background: #021526;
+}
+
+.k-footer{
+    text-align: center;
+    padding: 60px 20px;
+    background: #0C2B43;
+}
+
+.k-footer p{
+    color: #B9C4D0;
+    margin: 15px;
+}
+
+.k-footer a{
+    display: inline-block;
+    color: #F5B31B;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+@media(max-width:800px){
+    .k-header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .k-header nav{
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .k-hero-content h1{
+        font-size: 42px;
+    }
+
+    .k-about{
+        grid-template-columns: 1fr;
+    }
+
+    .k-grid{
+        grid-template-columns: 1fr;
+    }
+}
